@@ -1,0 +1,2959 @@
+/* 	Theme Name: RedHost
+	Author: Redcheap Theme
+	Author URI:http://www.rctheme.com
+    Version:1.0.0
+    Created: 25 October 2018
+*/
+
+/*------------------------------------------------------------------
+
+[Table of contents]
+1. Global
+2. Header / header
+3. Navigation / .main_menu
+4. Slider / .mainslider
+5. Domain Promo / .domain_promo
+6. Domain Search / .home_search
+7. Price Table / .hosting_promo
+8. What We Do / .what_we_do
+9. Why Register / .why_register
+10. Services / .home_services
+11. Testimonial / .customer_testimonial
+12. Blog / .home_blog
+13. Personal Info / .safe_host
+14. Inner Page Header / .inner_page_header
+15. Prices Table 2 / .price_table
+16. Hosting Features / .hosting_features
+17. Why Choose Hosting / .why_choose_hosting
+18. Page Offer banner / .page_banner
+19. Technical Features / .table_main
+20. FAQs / .accordian_main
+21. Call Back / .call_back_main
+22. Server Features / .server_features
+23. Login Page / .login_box
+24. Domain Plan / .domain_plan
+25. Hosting Plan / .hosting_price
+26. 404 page / .not_found
+27. Footer / .footer
+
+
+-------------------------------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800');
+@import url('color.css');
+
+
+/* ======== Global CSS Start ======== */
+
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
+.clear {
+	clear: both;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	outline: 0 !important;
+}
+.vis-hidden {
+	visibility: hidden;
+}
+
+::-webkit-input-placeholder {
+ color: #959595;
+}
+
+:-moz-placeholder {
+
+  /* Firefox 18- */
+
+  color: #959595;
+}
+
+::-moz-placeholder {
+
+  /* Firefox 19+ */
+
+  color: #959595;
+}
+
+:-ms-input-placeholder {
+ color: #959595;
+}
+body {
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+p {
+	padding: 0px;
+	margin: 0px;
+	font-weight: 400;
+}
+h1 {
+	font-size: 46px;
+}
+h2 {
+	font-size: 40px;
+}
+h3 {
+	font-size: 34px;
+	font-weight: 400;
+}
+h4 {
+	font-size: 28px;
+	font-weight: 400;
+}
+h5 {
+	font-size: 22px;
+}
+h6 {
+	font-size: 16px;
+	font-weight: 400;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol {
+	padding-left: 20px;
+	list-style-type: decimal;
+}
+ul {
+	list-style: none;
+	padding: 0px;
+	margin: px;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+sup, sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+input, select {
+	vertical-align:middle;
+}
+.spacer {
+	float: left;
+	width: 100%;
+	height: 30px;
+}
+.heading_txt {
+	font-weight: 700;
+	text-align: center;
+	display: block;
+	padding: 10px 0;
+}
+.headings {
+	float: left;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+	width: 100%;
+}
+.headings h3, .headings h2, .headings h4 {
+	display: inline-block;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	font-size: 50px;
+	font-weight:700;
+}
+.primary_button, .secondry_button {
+	font-size: 18px;
+	font-weight: 400;
+	padding: 8px 30px;
+	border: 0px;
+	text-align: center;
+	letter-spacing: 1px;
+	border-radius:3px;
+	-webkit-transition: all .3s ease-in-out 0s;
+	-moz-transition: all .3s ease-in-out 0s;
+	-o-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
+}
+.primary_button:hover, .secondry_button:hover {
+	text-decoration: none;
+}
+.primary_button:hover span, .secondry_button:hover span {
+	display:block;
+	text-decoration:none;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .5s;
+	animation-timing-function: linear;
+}
+.text_center {
+	text-align: center;
+}
+.padding-30 {
+	padding:30px 0px;
+}
+h5.section_sub_heading {
+	margin: 0;
+	padding: 30px 0px 20px 0px;
+	font-size:28px;
+	font-weight:700;
+}
+section {
+	padding: 100px 0px;
+	float: left;
+	width: 100%;
+}
+.bottom-padding {
+	padding: 0px 0px 100px 0px !important;
+}
+.blog-padding {
+	padding: 30px 0px 100px 0px !important;
+}
+.no-padding {
+	padding: 0px !important;
+}
+.margin-20 {
+	margin:20px 0px;
+}
+.domain_promo .promo_box, .home_search .search_box, .what_we_do .whatwedo, .why_register .register_choose_section .choose_r_options, .home_services .plan_box, .customer_testimonial .testimonial, .home_blog .blog_txt_inner, .domain_plan .domain_b, .table_main .tables, .accordian_main .accordion, .safe_host .pr_info, .server_features .server_features_box, .support_features .support_features_inner, .contact_info .contact_box, form.contact-form, .contact_form .c_address_box, .abut-main-txt, .bundles_plans {
+	margin-top: 100px;
+}
+.accordian_main .accordion, .hosting_features .features_box, .why_choose_hosting, .offer, .our_staff {
+	margin-top: 70px;
+}
+
+
+/* ======== Header CSS Start ======== */
+
+
+header {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/*Navigation CSS*/
+
+.main_menu {
+	width: 100%;
+}
+.main_menu .logo {
+	padding: 20px 0px 0px 0px;
+}
+.main_menu .navbar-nav > li > a {
+	font-size: 15px;
+	padding: 35px 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.main_menu .navbar-nav > li > a:hover, .main_menu .navbar-nav > li.active > a:hover, .main_menu .navbar-nav > li.open > a:hover, .main_menu .navbar-nav > li.open > a:focus {
+	background: none;
+}
+.wm-dropdown-menu li a {
+	transition: all 0.3s;
+}
+.wm-dropdown-menu li a:hover {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	padding-left: 50px;
+	padding-right: 30px;
+}
+.wm-dropdown-menu li a:after {
+	content: '\f054';
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+	position: absolute;
+	left: -15px;
+	opacity: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+	transition: all .3s;
+}
+.main-nav-container ul.sub-menu {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.wm-dropdown-menu li a:hover:after {
+	left: 30px;
+	opacity: 1;
+}
+.navbar {
+	background: none;
+	border: none;
+	float: left;
+	margin-bottom: 0px;
+	width: 100%;
+}
+.navbar-nav ul {
+	padding: 0;
+}
+.navbar-nav {
+	float: right;
+}
+.navbar-collapse {
+	padding: 0px;
+}
+.wm-dropdown-menu {
+	left: 0;
+	margin: 0;
+	opacity: 0;
+	position: absolute;
+	top: 100%;
+	-webkit-box-shadow: 1px 2px 10px -1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 2px 10px -1px rgba(0,0,0,0.2);
+	box-shadow: 1px 2px 10px -1px rgba(0,0,0,0.2);
+	-webkit-transform: translateY(40px);
+	-moz-transform: translateY(40px);
+	-ms-transform: translateY(40px);
+	-o-transform: translateY(40px);
+	transform: translateY(40px);
+	-webkit-transition: all 0.6s cubic-bezier(0.68, -1, 0.265, 2);
+	-moz-transition: all 0.6s cubic-bezier(0.68, -1, 0.265, 2);
+	-ms-transition: all 0.6s cubic-bezier(0.68, -1, 0.265, 2);
+	-o-transition: all 0.6s cubic-bezier(0.68, -1, 0.265, 2);
+	transition: all 0.6s cubic-bezier(0.68, -1, 0.265, 2);
+	visibility: hidden;
+	width: 260px;
+	z-index: 99;
+	transform: scale(0.4);
+	transform-origin: 10% top;
+	transition: 0s max-height 0.15s linear,0.1s opacity cubic-bezier(0.39, 0.575, 0.565, 1),0.15s transform cubic-bezier(0.1, 1.26, 0.83, 1);
+	opacity: 0;
+}
+.main_menu .navbar-nav > li:hover .wm-dropdown-menu {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+	-webkit-transition-duration: 0s, 0.2s, 0.2s !important;
+	transition-duration: 0s, 0.2s, 0.2s !important;
+}
+.wm-dropdown-menu .wm-dropdown-menu {
+	left: 100%;
+	top: 10%;
+}
+.wm-dropdown-menu ul {
+	padding: 0;
+}
+.wm-dropdown-menu li {
+	float: left;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+.wm-dropdown-menu li a {
+	float: left;
+	padding: 10px 15px;
+	text-decoration: none;
+	width: 100%;
+}
+.wm-dropdown-menu li a:before {
+	font-size: 12px;
+	position: absolute;
+	right: 20px;
+	top: 11px;
+	opacity: 0;
+	-webkit-transform: scale(-1);
+	-moz-transform: scale(-1);
+	-ms-transform: scale(-1);
+	-o-transform: scale(-1);
+	transform: scale(-1);
+}
+.wm-dropdown-menu li:hover a:before {
+	right: 30px;
+	opacity: 1;
+}
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 0 5px #222;
+	-webkit-box-shadow: 0 0 5px #222;
+	-moz-box-shadow: 0 0 5px #222;
+	z-index: 99999;
+}
+
+
+/* ======== Header CSS End ======== */
+
+/* ======== Services Box CSS Start ======== */
+
+
+.servicess .left_box {
+	padding: 100px 0px;
+}
+.servicess .left_box ul {
+	margin-bottom: 0;
+}
+.servicess .left_box ul li {
+	display: block;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.servicess .left_box ul li:last-child {
+	padding-bottom:0px;
+}
+.servicess .left_box ul li h3{
+	color: #333;
+	font-size: 26px;
+	font-weight: 800;
+	line-height: 90px;
+	padding:0px 0px 0px 20px;
+	margin:0px;
+	float:left;
+}
+.servicess .left_box ul li .icon {
+	width: 90px;
+	height: 90px;
+	line-height: 105px;
+	border-radius: 50%;
+	position: relative;
+	z-index: 3;
+	text-align:center;
+	float:left;
+}
+.servicess .left_box ul li .icon i {
+	color:#1a74b1;
+	font-size: 40px;
+}
+.servicess .left_box ul li .icon:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 50%;
+	z-index: -1;
+	-webkit-transform: scale(0, 0);
+	transform: scale(0, 0);
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+.servicess .left_box ul li:hover .icon:after {
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+}
+.servicess .left_box ul li:hover .icon i {
+	color:#FFF;
+}
+.servicess .right_box {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 100px 60px;
+	z-index: 1;
+	height: 100%;
+}
+.servicess .right_box:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	z-index: -1;
+}
+.servicess .right_box ul {
+	margin-bottom: 0;
+}
+.servicess .right_box ul li {
+	display: block;
+	overflow: hidden;
+	border-bottom: 1px solid #FFF;
+	padding-bottom: 29px;
+	margin-bottom: 30px;
+}
+.servicess .right_box ul li .content .icon {
+	width: 55px;
+	display: table-cell;
+	vertical-align: top;
+}
+.servicess .right_box ul li .content .icon i {
+	font-size:50px;
+	color:#FFF;
+}
+.servicess .right_box ul li:hover .content .icon i{
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+	color:#fba529;
+}
+
+.servicess .right_box ul li .content .title {
+	padding-left: 30px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.servicess .right_box ul li .content .title h3 {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: normal;
+	margin: 0 0 1px;
+	padding: 0px 0px 15px 0px;
+}
+
+.servicess .right_box ul li .content .title span {
+	color: #FFF;
+	font-size:18px;
+}
+
+
+/* ======== Services Box CSS Start ======== */
+
+/* ======== Testimonial CSS Start ======== */
+
+
+.testimonial-box {
+	padding: 20px;
+	margin: 100px 0px 0px 0px;
+	overflow:hidden;
+}
+.testimonial-box .ratting {
+	font-size: 18px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.testimonial-box .ratting i {
+	color: #FC0;
+}
+.testimonial-box p {
+	padding: 20px 0px;
+}
+.testimonial-box .client-name {
+	color: #150773;
+	font-weight: 800;
+	font-size: 22px;
+}
+.testimonial-box .client-name span {
+	color: #666;
+	font-size: 16px;
+	font-weight: 100;
+}
+.testimonial-box:hover  .client-name, .testimonial-box:hover .client-name span, .testimonial-box:hover p{
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .6s;
+	animation-timing-function: linear;
+	color:#FFF;
+}
+
+
+/* ======== Testimonial CSS End ======== */
+
+/* ======== Blog CSS Start ======== */
+
+
+.card-body {
+	border: 1px solid #EEE;
+	padding: 20px;
+	margin-top: 70px;
+	box-shadow:0px 0px 8px #EEE;
+}
+.card-body h2.card-title a {
+	font-size: 32px;
+}
+.card-body p.card-text {
+	font-size: 18px;
+	text-align: left;
+	color: #666;
+}
+.card-body  a.primary_button {
+	display:inline-block;
+	margin:20px 0px;
+}
+.card-body .card-footer {
+	background: #F8F8F8;
+	padding: 10px;
+	border: 1px solid #EDEDED;
+}
+blockquote {
+	border-left: 5px solid #1a74b1;
+	background: #EEE;
+}
+.widgets{
+    border: 1px solid #EEE;
+	padding: 10px;
+	margin-top: 70px;
+	box-shadow:0px 0px 8px #EEE;
+}
+.widgets h3{
+    padding:10px 0px;
+    font-size:20px;
+    margin:0px 0px 20px 0px;
+    border-bottom:1px solid #eaeaea;
+}
+.widgets ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.widgets ul li{
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.widgets ul.tags a {
+	display: inline-block;
+	margin: 2px;
+	padding: 5px 10px;
+	font-size: 18px;
+}
+.widgets h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.comment-respond {
+	margin-top:50px; 
+}
+.comment-respond textarea, .comment-respond input {
+	width: 100%;
+	border: 1px solid #CCC;
+	padding: 10px;
+	resize: none;
+}
+.input-group input.form-control {
+	padding: 21px;
+	border-radius: 3px 0px 0px 3px;
+	width: 95%;
+}
+
+/* ======== Blog CSS End ======== */
+
+/* ======== Hosting Features CSS Start ======== */
+
+
+.hostin_features .right_box ul {
+	margin-bottom: 0;
+}
+.hostin_features .right_box ul li {
+	display: block;
+	overflow: hidden;
+	margin: 50px 0px 0px 0px;
+}
+.hostin_features .right_box ul li:first-child {
+	margin: 100px 0px 0px 0px;
+}
+.hostin_features .right_box ul li .content .icon {
+	width: 55px;
+	display: table-cell;
+	vertical-align: top;
+}
+.hostin_features .right_box ul li .content .icon i {
+	font-size:50px;
+	color:#FFF;
+}
+.hostin_features .right_box ul li:hover .content .icon i{
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .6s;
+	animation-timing-function: linear;
+	color:#FFF;
+}
+.hostin_features .right_box ul li .content .title {
+	padding-left: 30px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.hostin_features .right_box ul li .content .title h3 {
+	color: #fff;
+	font-size: 22px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: normal;
+	margin: 0 0 1px;
+	padding: 0px 0px 15px 0px;
+}
+.hostin_features .right_box ul li .content .title span {
+	color: #FFF;
+	font-size:18px;
+}
+
+
+/* ======== Hosting Features CSS End ======== */
+
+/* ======== Slider CSS Start ======== */
+
+
+.mainslider {
+	position: relative;
+	top: 0px;
+}
+.bs-slider .bs-slider-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.bs-slider > .carousel-inner > .item > img, .bs-slider > .carousel-inner > .item > a > img {
+	margin: auto;
+	width: 100% !important;
+}
+.fade {
+	opacity: 1;
+}
+.fade .item {
+	top: 0;
+	z-index: 1;
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	left: 0 !important;
+	display: block !important;
+	-webkit-transition: opacity ease-in-out 1s;
+	-moz-transition: opacity ease-in-out 1s;
+	-ms-transition: opacity ease-in-out 1s;
+	-o-transition: opacity ease-in-out 1s;
+	transition: opacity ease-in-out 1s;
+}
+.fade .item:first-child {
+	top: auto;
+	position: relative;
+}
+.fade .item.active {
+	opacity: 1;
+	z-index: 2;
+	-webkit-transition: opacity ease-in-out 1s;
+	-moz-transition: opacity ease-in-out 1s;
+	-ms-transition: opacity ease-in-out 1s;
+	-o-transition: opacity ease-in-out 1s;
+	transition: opacity ease-in-out 1s;
+}
+
+
+/*---------- LEFT/RIGHT ROUND CONTROL ----------*/
+
+
+.control-round .carousel-control {
+	top: 47%;
+	opacity: 0;
+	width: 45px;
+	height: 45px;
+	z-index: 100;
+	display: block;
+	font-size: 24px;
+	cursor: pointer;
+	overflow: hidden;
+	line-height: 43px;
+	text-shadow: none;
+	position: absolute;
+	font-weight: normal;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+}
+.control-round:hover .carousel-control {
+	opacity: 1;
+}
+.control-round .carousel-control.left {
+	left: 1%;
+}
+.control-round .carousel-control.right {
+	right: 1%;
+}
+.control-round .carousel-control.left:hover, .control-round .carousel-control.right:hover {
+	border: 0px transparent;
+}
+ .control-round .carousel-control.left>span:nth-child(1) {
+ left: 45%;
+}
+ .control-round .carousel-control.right>span:nth-child(1) {
+ right: 45%;
+}
+.indicators-line > .carousel-indicators {
+	right: 45%;
+	bottom: 3%;
+	left: auto;
+	width: 90%;
+	height: 20px;
+	font-size: 0;
+	overflow-x: auto;
+	text-align: right;
+	overflow-y: hidden;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 1px;
+	white-space: nowrap;
+}
+.indicators-line > .carousel-indicators li {
+	padding: 0;
+	width: 15px;
+	height: 15px;
+	text-indent: 0;
+	overflow: hidden;
+	text-align: left;
+	position: relative;
+	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	margin-right: 5px;
+	-webkit-transition: all 0.5s cubic-bezier(0.22, 0.81, 0.01, 0.99);
+	transition: all 0.5s cubic-bezier(0.22, 0.81, 0.01, 0.99);
+	z-index: 10;
+	cursor: pointer;
+}
+.indicators-line > .carousel-indicators li:last-child {
+	margin-right: 0;
+}
+.indicators-line > .carousel-indicators .active {
+	margin: 1px 5px 1px 1px;
+	position: relative;
+	-webkit-transition: box-shadow 0.3s ease;
+	-moz-transition: box-shadow 0.3s ease;
+	-o-transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
+	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+.indicators-line > .carousel-indicators .active:before {
+	transform: scale(0.5);
+	content: "";
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+
+
+/*---------- SLIDE CAPTION ----------*/
+
+
+.slide_style_center {
+	text-align: center !important;
+}
+.slide-text {
+	left: 0;
+	top: 25%;
+	right: 0;
+	margin: auto;
+	padding: 10px;
+	position: absolute;
+	text-align: left;
+	padding: 10px 85px;
+}
+.slide-text > h1 {
+	padding: 0px;
+	font-size: 70px;
+	font-style: normal;
+	line-height: 84px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-transform: uppercase;
+	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+}
+.slide-text > p {
+	padding: 0px;
+	letter-spacing: 1px;
+	-webkit-animation-delay: 1.1s;
+	animation-delay: 1.1s;
+	width: 70%;
+	margin: 0px auto 40px auto;
+}
+.slide-text > a {
+	display:inline-block;
+}
+.slide-text > a.buy_now_s {
+	cursor: pointer;
+	font-weight: 400;
+	display: inline-block;
+	border: none;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+	-webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+ @media (max-width: 991px) {
+ .slide-text h1 {
+ font-size: 40px;
+ line-height: 50px;
+ margin-bottom: 20px;
+}
+}
+ @media (max-width: 768px) {
+ .slide-text {
+ padding: 10px 50px;
+}
+ .slide-text h1 {
+ font-size: 30px;
+ line-height: 40px;
+ margin-bottom: 10px;
+}
+ .slide-text > p {
+ line-height: 20px;
+ margin-bottom: 20px;
+}
+ .control-round .carousel-control {
+ display: none;
+}
+}
+ @media (max-width: 480px) {
+ .slide-text {
+ padding: 10px 30px;
+}
+ .slide-text h1 {
+ font-size: 20px;
+ line-height: 25px;
+ margin-bottom: 5px;
+}
+ .indicators-line > .carousel-indicators {
+ display: none;
+}
+}
+
+
+/* ======== Slider CSS End ======== */
+
+
+/* ======== Home Domain Promo CSS Start ======== */
+
+
+.domain_promo .promo_box {
+	padding: 20px 0px;
+}
+.domain_promo .promo_box .promo_h {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.domain_promo .promo_box .price_p {
+	font-size: 28px;
+}
+.domain_promo .promo_box .price_c {
+	font-size: 18px;
+	text-decoration: line-through;
+}
+
+
+/* ======== Home Domain Promo CSS End ======== */
+
+
+/* ======== Home Domain Search CSS Start ======== */
+
+
+.home_search {
+	clear: both;
+	padding:0px 0px;
+	background-image:url(../images/home-banner.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.home_search h1 {
+	text-align: center;
+	padding: 100px 0px 0px 0px;
+	margin: 0px;
+	font-size: 58px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color:#FFF;
+}
+.home_search img {
+	padding:50px 0px 0px 0px;
+	float:right;
+}
+.home_search .search_box {
+	padding-bottom:100px;
+	display:inline-block;
+	width:100%;
+}
+.home_search .search_box .h_search {
+	float: left;
+	width: 75%;
+	font-size: 15px;
+	text-indent: 8px;
+	border: 0px;
+	height: 70px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	font-size:26px;
+}
+.home_search .search_box .h_submit {
+	float: left;
+	width: 25%;
+	height: 70px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	font-size:26px;
+	text-transform:uppercase;
+}
+.home_offer {
+	background-color:#fba529;
+	padding:20px 0px;
+	display:inline-block;
+	width:100%;
+	text-align:center;
+}
+.home_offer ul {
+	margin:0px;
+	padding:0px;
+}
+.home_offer ul li {
+	display:inline;
+	margin:0px 10px;
+}
+.home_offer ul li a {
+	color:#FFF;
+	border:1px solid #FFF;
+	padding:10px 20px;
+	display:inline-block;
+	-webkit-transition: all .3s ease-in-out 0s;
+	-moz-transition: all .3s ease-in-out 0s;
+	-o-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s;
+}
+.home_offer ul li a:hover {
+	text-decoration:none;
+}
+.home_offer ul li a:hover span {
+	display:block;
+	text-decoration:none;
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .5s;
+	animation-timing-function: linear;
+}
+
+
+/* ======== Home Domain Search CSS End ======== */
+
+
+/* ======== Hosting Promo Box CSS Start ======== */
+
+
+.hosting_promo .promo_box .icon {
+	float:left;
+	width:100%;
+	margin:0px 0px 30px 0px;
+}
+.hosting_promo .promo_box .icon i {
+	font-size:80px;
+}
+.hosting_promo .promo_box:hover .icon i{
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+	color:#fba529;
+}
+.hosting_promo .promo_box h5 {
+	float: left;
+	margin: 0;
+	width: 100%;
+	font-size:32px;
+	font-weight:700;
+}
+.hosting_promo .promo_box .price_p {
+	float: left;
+	font-size: 18px;
+	padding: 25px 0;
+	width: 100%;
+}
+.hosting_promo .promo_box a {
+	display:inline-block;
+}
+
+
+/* ======== Hosting Promo Box CSS End ======== */
+
+
+/* ======== What We Do CSS Start ======== */
+
+
+.what_we_do .whatwedo .what-icon {
+	font-size: 40px;
+}
+
+
+/* ======== What We Do CSS End ======== */
+
+
+/* ======== Why Register CSS Start ======== */
+
+
+.why_register .register_choose_section .choose_r_options i {
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	border-radius: 50%;
+	position: relative;
+	z-index: 3;
+	text-align: center;
+	background: #FFF;
+	font-size: 60px;
+}
+.why_register .register_choose_section .choose_r_options:hover i{
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+	color:#FFF;
+	background:#fba529;
+	font-size:40px;
+}
+
+
+/* ======== Why Register CSS End ======== */
+
+
+/* ======== Home Services CSS Start ======== */
+
+
+.home_services {
+	background: url(../images/services.html) center center no-repeat fixed;
+	background-size: cover;
+}
+.home_services .plan_box {
+	width: 100%;
+	padding: 20px;
+}
+.home_services .plan_box .icon {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	margin: 10px auto;
+}
+.home_services .plan_box .icon i {
+	position: relative;
+	font-size: 30px;
+	line-height: 50px;
+	text-align: center;
+}
+.home_services .plan_box .icon:before {
+	border-radius: 2px;
+	content: "";
+	display: inline-block;
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	transform: rotate(45deg);
+	transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1) 0s;
+	width: 100%;
+}
+
+
+/* ======== Home Services CSS End ======== */
+
+
+/* ======== Testimonial CSS ======== */
+
+
+.customer_testimonial .testimonial {
+	position: relative;
+}
+.customer_testimonial .test_text_box {
+	position: absolute;
+	right: 0px;
+	top: 80px;
+	width: 70%;
+	padding: 30px 50px;
+	box-shadow: 0px 0px 5px #666
+}
+.customer_testimonial .test_text_box strong {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+.customer_testimonial .test_text_box span {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+.abut-main-txt h5 {
+	padding:0px 0px 30px 0px;
+	margin:0px;
+}
+.our_staff {
+	display: inline-block;
+}
+.our_staff .team_box {
+	margin: 50px 0px 0px 0px;
+}
+.our_staff .team_box .thumbnail {
+	border: 0px;
+}
+.our_staff .team_box .thumbnail img {
+	border-radius: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.our_staff .team_box .thumbnail img:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+
+/* ======== Testimonial CSS ======== */
+
+
+/* ======== Home Blog CSS Start ======== */
+
+
+.home_blog {
+	background: url(../images/blog-bg.html) center center no-repeat fixed;
+	background-size: cover;
+}
+.home_blog .blog_txt_inner {
+	overflow: hidden;
+	padding: 20px;
+}
+.home_blog .blog_txt_inner h5 a {
+	text-decoration: none;
+	display: block;
+}
+.home_blog .blog_txt_inner span {
+	padding: 0px 0px 20px 0;
+	display: block;
+	font-weight: 400;
+}
+
+
+/* ======== Home Blog CSS End ======== */
+
+/* ======== Personal Info CSS Start ======== */
+
+
+.safe_host .pr_info {
+	display: inline-block;
+}
+.safe_host .pr_info .info_left img {
+	width: 100%;
+}
+.safe_host .pr_info .info_right ul {
+	margin: 0px;
+	padding: 0px 0px 20px 0px;
+}
+.safe_host .pr_info .info_right ul li {
+	padding:0px 0px 40px 0px;
+}
+.safe_host .pr_info .info_right ul li i {
+	font-size: 35px;
+	float: left;
+	margin: 10px 30px 0px 0px;
+	color: #150773;
+}
+.safe_host .pr_info .info_right ul li:hover i{
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+	color:#fba529;
+}
+.safe_host .pr_info .info_right ul li h3 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color:#333;
+	font-weight: 800;
+	margin:0px;
+	padding:0px 0px 10px 0px;
+}
+.safe_host .pr_info .info_right a {
+	display:inline-block;
+}
+
+
+/* ======== Personal Info CSS End ======== */
+
+/* ======== Inner Page Header CSS Start ======== */
+
+
+.inner_page_header {
+	background-color:#333;
+	background-image:url(../images/register-banner.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	position:relative;
+}
+.inner_page_header .inner_headin_s i {
+	padding: 20px 0;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	font-size: 60px;
+	display: block;
+	margin: 0px auto;
+}
+.inner_page_header .inner_headin_s h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.inner_page_header .inner_headin_s p {
+	text-align: center;
+	margin: 0px auto;
+	width: 75%;
+	padding: 10px 0px 0px 0px;
+}
+.inner_page_header .inner_headin_s .searh_bar_domain {
+	width: 75%;
+	margin: 40px auto 0px auto;
+}
+.inner_page_header .inner_headin_s .searh_bar_domain input.search_domain {
+	float: left;
+	width: 75%;
+	border: 0px;
+	text-indent: 8px;
+	border-right: 0px;
+	height: 50px;
+}
+.inner_page_header .inner_headin_s .searh_bar_domain .inner_search_btn {
+	float: left;
+	width: 25%;
+	height: 50px;
+	font-weight: 400;
+}
+.inner_page_header .inner_headin_s .tranfer_domain {
+	width: 90%;
+	margin: 40px auto 0px auto;
+}
+.inner_page_header .inner_headin_s .tranfer_domain input.tranfer_text {
+	float: left;
+	width: 70%;
+	border: 0px;
+	text-indent: 8px;
+	height: 50px;
+}
+.inner_page_header .inner_headin_s .tranfer_domain .tranfer_s {
+	float: left;
+	width: 15%;
+	height: 50px;
+	font-weight: 400;
+	border-left: 1px solid #666;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-top: 0px;
+}
+.inner_page_header .inner_headin_s .tranfer_domain .tranfer_domain_btn {
+	float: left;
+	width: 15%;
+	height: 50px;
+	font-weight: 400;
+}
+
+
+/* ======== Inner Page Header CSS End ======== */
+
+
+/* ======== Prices Table CSS Start ======== */
+
+
+.price_table h2 {
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+.price_table .tabs_l {
+	margin: 0px 0px 50px 0px;
+}
+.price_table .tabs_l ul.nav-tabs {
+	display: table;
+	margin: 0 auto;
+	border: 0px;
+}
+.price_table .tabs_l ul.nav-tabs li.active a {
+	border: 0px;
+}
+.price_table .tabs_l ul.nav-tabs li.active a:after {
+	content: '';
+	position: absolute;
+	right: 50%;
+	bottom: -10px;
+	margin-right: -13px;
+}
+.price_table .tabs_l ul.nav-tabs li a {
+	border-radius: 0px;
+	border: 0px;
+	font-size: 20px;
+	font-variant :normal;
+	padding: 20px 30px;
+	margin: 0px;
+}
+.price_table .plan_box .plan_header {
+	padding: 20px 0px;
+}
+.price_table .plan_box .plan_header .heading {
+	font-size: 20px;
+	font-weight: 300;
+	padding: 0px;
+	text-transform: uppercase;
+}
+.price_table .plan_box .plan_header .prices {
+	font-size: 60px;
+	font-weight: 600;
+	padding: 10px 0px 0px 0px;
+}
+.price_table .plan_box .plan_header .prices span {
+	font-size: 14px;
+	font-weight:300;
+}
+.price_table .plan_box .plan_middle {
+	padding: 0px;
+}
+.price_table .plan_box .plan_middle ul {
+	margin: 0px;
+	padding: 0px;
+}
+.price_table .plan_box .plan_middle li {
+	font-size: 16px;
+	padding: 15px 0px;
+	list-style: none;
+}
+.price_table .plan_box .plan_middle li:last-child {
+	border-bottom: 0px;
+}
+.price_table .plan_box .plan_footer {
+	padding: 20px 0px;
+}
+.price_table .plan_box .plan_footer .select_p {
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	height: 36px;
+}
+.price_table .plan_box .plan_footer a {
+	margin: 0px auto;
+	display: inline-block;
+	width: 80%;
+}
+
+
+/* ======== Prices Table CSS End ======== */
+
+/* ======== Hosting Features CSS Start ======== */
+
+
+.hosting_features {
+	background: #EEE;
+}
+.hosting_features .features_box {
+	position: relative;
+	display: inline-block;
+}
+.hosting_features .features_box .features_boxs {
+	padding: 10px 0;
+	margin: 30px 0px 0px 0px;
+	-webkit-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+}
+.hosting_features .features_box .features_boxs .features_imagev {
+	border-radius: 100%;
+	width: 110px;
+	display: block;
+	float: left;
+	margin: 35px 20px 0px 20px;
+	height: 110px;
+	border-radius: 100%;
+}
+.hosting_features .features_box .features_boxs .features_imagev i {
+	text-align: center;
+	font-size: 50px;
+	padding: 30px;
+}
+.hosting_features .features_box .features_boxs .features_content {
+	padding: 0px 20px 0 0;
+}
+.hosting_features .features_box .features_boxs .features_content p {
+	padding: 0px 0px 20px 0;
+}
+
+
+/* ======== Hosting Features CSS End ======== */
+
+
+/* ======== Why Choose Hosting CSS Start ======== */
+
+
+.why_choose_hosting {
+	display: inline-block;
+}
+.why_choose_hosting .hosting_box {
+	padding: 25px;
+	margin: 30px 0px 0px 0px;
+}
+.why_choose_hosting .hosting_box i {
+	font-size: 50px;
+	text-align: center;
+	margin: 0px auto;
+	width: 100px;
+	height: 100px;
+	padding: 26px 0;
+	display: block;
+	border-radius: 100%;
+}
+.why_choose_hosting .hosting_box:hover {
+	transition: background-color 0.3s ease;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	border-radius: 3px;
+}
+.why_choose_hosting .hosting_box:hover i{
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+}
+
+
+/* ======== Why Choose Hosting CSS End ======== */
+
+
+/* ======== Page Offer banner CSS Start ======== */
+
+
+.page_banner {
+	background: #333;
+	background-image:url(../images/page-banner.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	position:relative;
+}
+.page_banner.homeofferbanner {
+    background-image:url(../images/register-banner.jpg);
+}
+.page_banner h1 {
+	text-align: left;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+	font-size: 58px;
+	font-weight: 700;
+	text-transform:uppercase;
+}
+.page_banner .sub_heading_page {
+	font-size: 28px;
+	text-align: left;
+	letter-spacing: 2px;
+}
+.page_banner ul {
+	margin: 0px;
+	padding: 25px 0px;
+	display: inline-block;
+	width: 100%;
+}
+.page_banner ul li {
+	float: left;
+	width: 50%;
+	list-style: inside;
+	padding: 5px 0px 0px 0px;
+}
+.page_banner .startsat {
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.page_banner .banner_price {
+	font-size: 46px;
+}
+.page_banner .banner_price span {
+	font-size: 20px;
+}
+.page_banner a {
+	margin: 15px 0;
+	display: inline-block;
+}
+.page_banner .offer {
+	float: right;
+	margin: 0px;
+	text-align: center;
+	width: 80%;
+	padding: 0px;
+}
+.page_banner .offer .offer_inner {
+	margin: 10px;
+	padding: 20px 0px;
+}
+.page_banner .offer .offer_inner .top_l {
+	font-size: 27px;
+	text-transform: uppercase;
+}
+.page_banner .offer .offer_inner .big_l {
+	font-size: 82px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.page_banner .offer .offer_inner .off {
+	font-size: 28px;
+	text-transform: uppercase;
+}
+.page_banner .offer .offer_inner .c_code {
+	font-size: 18px;
+	padding: 15px 0px;
+}
+.page_banner .offer .offer_inner .ends {
+	font-size: 11px;
+}
+.page_banner .offer .offer_inner .c_code span {
+	color: #150773;
+	font-weight: 800;
+}
+
+
+/* ======== Page Offer banner CSS End ======== */
+
+/* ======== Technical Features CSS Start ======== */
+
+
+.table_main .tables {
+	padding: 15px;
+	display: inline-block;
+}
+.table_main .tables .heading {
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 15px 0px;
+	font-weight: 400;
+}
+.table_main .tables .middle {
+	text-align: center;
+	font-size: 15px;
+	padding: 15px 0px;
+	font-weight: 400;
+}
+
+
+/* ======== Technical Features CSS End ======== */
+
+/* ======== FAQs Section CSS Start ======== */
+
+
+.accordian_main {
+	background: #EEE;
+}
+.accordian_main .accordion .accordion-section {
+	margin: 30px 0px 0px 0px;
+}
+.accordian_main .accordion, .accordian_main .accordion * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.accordian_main .accordion {
+	overflow: hidden;
+}
+.accordian_main .accordion-section-title {
+	width: 100%;
+	padding: 15px;
+	display: inline-block;
+	text-align: left;
+	font-size: 24px;
+	position: relative;
+}
+.accordian_main .accordion-section-title.active, .accordion-section-title:hover {
+	text-decoration: none;
+}
+.accordian_main .accordion-section:last-child .accordion-section-title {
+	border-bottom: none;
+}
+.accordian_main .accordion-section-content {
+	padding: 15px;
+	text-align: left;
+	display:none;
+}
+.accordian_main .accordion-section-content.open {
+	display:block;
+}
+.accordian_main .accordion-section-title:after {
+	content: '\f067';
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+	position: absolute;
+	right: 10px;
+}
+.accordian_main .accordion-section-title.active:after {
+	content: '\f068';
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+	position: absolute;
+	right: 10px;
+}
+
+
+/* ======== FAQs Section CSS End ======== */
+
+/* ======== Server Features CSS Start ======== */
+
+
+.server_features .server_features_box {
+	padding: 15px;
+}
+.server_features .server_features_box i {
+	font-size: 36px;
+}
+
+
+/* ======== Server Features CSS Start ======== */
+
+/* ======== Login Page CSS Start ======== */
+
+
+.login_form {
+	outline: none;
+	box-shadow: 2px 2px 2px #ccc;
+}
+.login_form .login_header {
+	display: block;
+	padding: 10px 30px;
+	font-size: 25px;
+	font-weight: 300;
+}
+.login_form fieldset {
+	display: block;
+	padding: 25px 30px 5px;
+	border: none;
+}
+.login_form .section {
+	margin-bottom: 20px;
+}
+.login_form .login_footer {
+	display: block;
+	padding: 20px 30px;
+}
+.login_form .login_footer:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.login_form .label {
+	display: block;
+	margin-bottom: 16px;
+	line-height: 20px;
+	text-align: left;
+	padding: 0px;
+	font-weight: normal;
+}
+.login_form .input, .login_form .select, .login_form .checkbox, .login_form .toggle, .login_form .button {
+	position: relative;
+	display: block;
+}
+.login_form .input input, .login_form .select select, .login_form .textarea textarea {
+	display: block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	height: 39px;
+	padding: 8px 10px;
+	outline: none;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 0;
+	font-size: 13px;
+	appearance: normal;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	font-weight: normal;
+}
+.login_form .checkbox {
+	margin-bottom: 4px;
+	padding-left: 27px;
+	line-height: 27px;
+	cursor: pointer;
+	font-weight: normal;
+}
+.login_form .checkbox:last-child {
+	margin-bottom: 0;
+}
+.login_form .checkbox input {
+	position: absolute;
+	left: -9999px;
+}
+.login_form .checkbox i {
+	position: absolute;
+	top: 5px;
+	left: 0;
+	display: block;
+	width: 16px;
+	height: 16px;
+	outline: none;
+	border-width: 2px;
+	border-style: solid;
+}
+.login_form .checkbox input + i:after {
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.1s;
+	-o-transition: opacity 0.1s;
+	-ms-transition: opacity 0.1s;
+	-moz-transition: opacity 0.1s;
+	-webkit-transition: opacity 0.1s;
+}
+.login_form .checkbox input + i:after {
+	content: '\f00c';
+	top: -8px;
+	left: -2px;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	font-family: 'Font Awesome 5 Free';
+   font-weight: 900;
+   font-size:9px;
+}
+.login_form .checkbox input:checked + i:after {
+	opacity: 1;
+}
+.login_form .button {
+	float: right;
+	height: 39px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0 25px;
+	outline: none;
+	border: 0;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+ .login_form [class^="icon-"] {
+ font-family: FontAwesome;
+ font-style: normal;
+ font-weight: normal;
+ -webkit-font-smoothing: antialiased;
+}
+.login_form .icon-append, .login_form .icon-prepend {
+	position: absolute;
+	top: 5px;
+	width: 29px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+}
+.login_form .icon-append {
+	right: 5px;
+	padding-left: 3px;
+	border-left-width: 1px;
+	border-left-style: solid;
+}
+.login_form .icon-prepend {
+	left: 5px;
+	padding-right: 3px;
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+.login_form .input .icon-prepend + input, .login_form .textarea .icon-prepend + textarea {
+	padding-left: 46px;
+}
+.login_form .input .icon-append + input, .login_form .textarea .icon-append + textarea {
+	padding-right: 46px;
+}
+.login_form .input .icon-prepend + .icon-append + input, .login_form .textarea .icon-prepend + .icon-append + textarea {
+	padding-left: 46px;
+}
+.login_form .input input, .login_form .select select, .login_form .textarea textarea, .login_form .radio i, .login_form .checkbox i, .login_form .toggle i, .login_form .icon-append, .login_form .icon-prepend {
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+.login_form .button:hover {
+	opacity: 1;
+}
+
+
+/* ======== Login Page CSS End ======== */
+
+/* ======== Offer Page CSS Start ======== */
+
+
+.offer {
+	display: inline-block;
+}
+.offer .offer_box {
+	margin: 30px 0px 0px 0px;
+}
+.offer .offer_box h5 {
+	background: #150773;
+	padding: 40px;
+}
+.offer .offer_box .offer_info {
+	padding: 30px;
+}
+.offer .offer_box .offer_info .cupoun {
+	display: block;
+	font-size: 24px;
+	font-weight: 400;
+	margin: 30px 0;
+	padding: 10px;
+}
+.offer .offer_box .offer_info a {
+	display: block;
+	margin: 25px auto 0 auto;
+	width: 60%;
+}
+
+
+/* ======== Offer Page CSS End ======== */
+
+/* ======== Support Feature CSS Start ======== */
+
+
+.support_features .sub_heading {
+	margin: 0;
+	padding: 10px 0;
+	text-align: left;
+}
+.support_features .support_features_inner {
+	box-shadow: 0 0 6px #ccc;
+	padding: 20px;
+	text-align: left;
+}
+.support_features .support_features_inner .heading_s {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.support_features .support_features_inner ul {
+	margin: 0px;
+	text-align: left;
+	padding: 0px
+}
+.support_features .support_features_inner ul li {
+	display: flex;
+	list-style: none;
+	padding: 6px 0;
+}
+.support_features .support_features_inner ul li:before {
+	content: '\f101';
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+	font-size: 10px;
+	padding: 7px 6px 0px 0px;
+}
+
+
+/* ======== Support Feature CSS Start ======== */
+
+/* ======== Contact Info CSS Start ======== */
+
+
+.contact_info .contact_box {
+	padding: 30px;
+	min-height: 422px;
+}
+.contact_info .contact_box i {
+	font-size: 40px;
+	height: 80px;
+	line-height: 75px;
+	margin: 0px;
+	padding: 0;
+	width: 80px;
+}
+.contact_info .contact_box a {
+	display: block;
+	margin: 25px auto;
+	width: 80%;
+}
+
+
+/* ======== Contact Info CSS End ======== */
+
+/* ======== Contact Form and Address CSS Start ======== */
+
+.contact_form span.ctext .c_text {
+	border: 0px;
+	text-indent: 5px;
+	line-height: 38px;
+}
+.contact_form span.ctext .c_texta {
+	border: 0px;
+	resize: none;
+	width: 100%;
+	text-indent: 5px;
+	line-height: 38px;
+}
+.contact_form span.ctext {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	margin-bottom: 30px;
+}
+.contact_form span.ctext:before {
+	content: "";
+	width: 1px;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.contact_form .contact_btn {
+	float: right;
+	margin: 0px;
+}
+.contact_form .c_address_box {
+	padding: 30px;
+}
+.contact_form .c_address_box i.address-icon {
+	font-size: 40px;
+	height: 80px;
+	line-height: 75px;
+	margin: 0px;
+	padding: 0;
+	width: 80px;
+}
+.contact_form .c_address_box .contact_social {
+	margin:20px 0px 0px 0px;
+}
+.contact_form .c_address_box .contact_social ul li {
+	list-style:none;
+	display:inline;
+	margin:0px 5px;
+}
+.contact_form .c_address_box .contact_social ul li a {
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+}
+
+
+/* ======== Contact Form and Address CSS End ======== */
+
+/* ======== Domain Plan CSS Start ======== */
+
+
+.domain_plan .domain_b .domain_h {
+	padding: 20px 10px;
+	min-height: 126px;
+}
+.domain_plan .domain_b:hover .domain_h img{
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	animation-duration: .4s;
+	animation-timing-function: linear;
+}
+.domain_plan .domain_b .domain_h p {
+	font-weight: normal;
+	padding: 10px 0 0 0;
+	margin: 0px;
+	text-transform: none;
+}
+.domain_plan .domain_b .bottom_b .plan_p {
+	font-size: 34px;
+	padding: 10px 0px;
+}
+.domain_plan .domain_b .bottom_b .cut_p {
+	font-size: 18px;
+	font-weight: normal;
+	padding: 0px;
+	text-decoration: line-through;
+}
+.domain_plan .domain_b .bottom_b a {
+	margin: 20px auto;
+	display: inline-block;
+}
+
+
+/* ======== Domain Plan CSS End ======== */
+
+/* ======== Hosting Plan CSS Start ======== */
+
+
+.hosting_price .price_holder {
+	padding: 0px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	position:relative;
+	overflow:hidden;
+}
+.hosting_price .price_holder h4 {
+	padding: 30px 0px;
+	margin:0px;
+}
+.hosting_price .price_holder .plan_value {
+	margin: 0px;
+	font-size:76px;
+	text-align: center;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font-weight:800;
+}
+.hosting_price .price_holder .plan_value span {
+	font-size: 40px;
+	vertical-align: text-top;
+	font-weight:100;
+}
+.hosting_price .price_holder ul {
+	margin: 0px;
+	padding: 0px;
+}
+.hosting_price .price_holder ul li {
+	text-align: center;
+	font-size: 16px;
+	padding: 15px 0px;
+	list-style: none;
+}
+.hosting_price .price_holder .order_now a {
+	display: inline-block;
+	margin: 20px auto;
+}
+
+
+/* ======== Hosting Plan CSS End ======== */
+
+/* ======== 404 page CSS Start ======== */
+
+
+.not_found h2 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.not_found h3 {
+	padding: 30px 0 0 0;
+	margin: 0;
+	font-size: 100px;
+	text-transform: uppercase;
+	width: 100%;
+	font-weight: 700;
+}
+.not_found a {
+	display: inline-block;
+	width: 200px;
+	margin: 28px auto;
+}
+.not_found p {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* ======== 404 page CSS End ======== */
+
+/* ======== Footer CSS Start ======== */
+
+
+.footer {
+	float: left;
+	width: 100%;
+}
+.footer .f_outr_section .f_txt_heading {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.footer .f_contact_s.email_bg {
+	margin-bottom: 20px;
+}
+.footer .f_about {
+	padding: 6px 0px 0px 0px;
+}
+.footer .f_outr_section .f_txt_heading h4 {
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 40px 0px;
+	font-weight:700;
+	position:relative;
+}
+.footer .f_outr_section .f_txt_heading h4:before {
+	position: absolute;
+	display: inline-block;
+	content: "";
+	bottom: -1px;
+	width: 0;
+	height: 2px;
+	width:40px;
+	background-color: #ffffff;
+}
+.footer .f_outr_section .f_txt_heading ul li {
+	list-style-type: none;
+	padding: 6px 0;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.footer .f_outr_section .f_txt_heading ul li:hover {
+	padding-left:10px;
+}
+.footer .f_outr_section .f_txt_heading ul li a {
+	text-decoration: none;
+	padding-left: 10px;
+	font-weight: 700;
+	color: #CCC;
+	
+}
+.footer .f_outr_section .f_txt_heading ul li:before {
+	content: '\f054';
+	font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+	font-size: 11px;
+	color: #CCC;
+}
+.footer .copy-right {
+	padding: 0px 0px 50px 0px;
+}
+.footer .copy-right .coright-text {
+	font-size: 16px;
+	color: #999;
+}
+.footer .copy-right .copyright-menu {
+	text-align: right;
+}
+.footer .copy-right .copyright-menu ul {
+	margin: 0;
+}
+.footer .copy-right .copyright-menu ul li {
+	display: inline;
+	padding-left: 20px;
+}
+.footer .copy-right .copyright-menu ul li a {
+	font-size: 16px;
+	color: #1a74b1;
+}
+.footer .copy-right .copyright-menu ul li a:hover {
+	text-decoration:none;
+	color:#FFF;
+}
+
+
+/* ======== Footer CSS End ======== */
+
+/* ======== Bundle Offers CSS Start ======== */
+
+
+.bundles_plans {
+	display: inline-block;
+	width: 100%;
+}
+.bundles_plans .bundles_heading {
+	padding: 20px 0px;
+}
+.bundles_plans .bundles_heading h4 {
+	margin: 0px;
+	padding: 0px;
+}
+.bundles_plans .bundle_box {
+	padding: 20px 0px;
+	float: left;
+	width: 100%;
+	position:relative
+}
+.bundles_plans .bundle_box .plan_value {
+	font-size: 20px;
+}
+.bundles_plans .bundle_box .sub_title {
+	font-size: 18px;
+	padding: 5px 0px;
+}
+.bundles_plans .bundle_box ul li {
+	font-size: 14px;
+}
+.bundles_plans .bundle_box .price_bundle {
+	font-size: 36px;
+	padding: 15px 0px
+}
+.bundles_plans .bundle_box .price_bundle span {
+	font-size: 14px;
+}
+ .bundles_plans .bundle_box .plus::before {
+ content: '\f067';
+ font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+ font-size: 24px;
+ position: absolute;
+ left: -9px;
+ top: 50px;
+}
+.bundles_plans .bundle_box .bundles_arrow {
+	background: url(../images/plan-arrow.png) no-repeat center center;
+	background-size: cover;
+	height: 180px;
+	width: 28px;
+	position: absolute;
+	left: -10px;
+	top: -20px;
+}
+.bundles_plans .bundle_box a {
+	display:inline-block
+}
+
+
+/* ======== Bundle Offers CSS End ======== */
+
+/* ======== Domain Promos CSS Start ======== */
+
+
+.domain_sale {
+	padding:60px 0px 100px 0px;
+}
+.domain_sale .promo_box .domain_p_name {
+	font-size: 38px;
+	padding: 10px;
+}
+.domain_sale .promo_box .d_price {
+	font-size: 16px;
+	margin: 14px 0 4px;
+	color: #666;
+	text-decoration: line-through;
+}
+.domain_sale .promo_box .p_price {
+	font-size: 36px;
+	padding: 0 10px 10px;
+	font-weight: 800;
+}
+.domain_sale .promo_box .promo_date {
+	font-size: 14px;
+	padding:20px 0px;
+}
+.domain_sale .promo_box .buynow a {
+	display: inherit;
+}
+
+
+/* ======== Domain Promos CSS End ======== */
+
+#quote-carousel {
+    padding: 0px;
+    margin: 70px 0px 0px 0px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #FFF;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 400px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+	text-align:left;
+	font-size:20px;
+	line-height:34px;
+	background:none;
+}
+.item blockquote .client-name {
+	font-size: 28px;
+	text-transform: uppercase;
+	display: inline-block;
+	font-weight: 700;
+}
+.item blockquote .client-name span {
+	font-size: 15px;
+	text-transform: none;
+	font-weight: 400;
+	padding-left: 20px;
+	color: #9C9C9C;
+}
+.item blockquote .ratting {
+	color:#FC0;
+	padding-bottom: 20px;
+}
+
+
+/* ======== Multiple Devices CSS ======== */
+
+
+@media (min-width : 992px) and (max-width:1200px) {
+ .slide-text {
+ top: 18%;
+}
+ .main_menu .navbar-nav > li > a {
+ padding: 35px 15px;
+ font-size: 14px;
+}
+}
+ @media (min-width : 768px) and (max-width: 991px) {
+ .main_menu .navbar-nav > li > a {
+ padding: 25px 8px;
+ font-size: 12px;
+}
+ .slide-text {
+ top: 16%;
+}
+ .slide-text > p {
+ width: 95%;
+}
+ .why_register .register_choose_section {
+ display: inline-block;
+ margin: 0px;
+}
+ .home_services .plan_box {
+ display: inline-block;
+}
+ .customer_testimonial img {
+ width: 50%;
+}
+ .customer_testimonial .test_text_box {
+ top: 22px;
+}
+ .footer .footer-bottom .nwesltr {
+ width: 60%;
+}
+ .wm-dropdown-menu {
+ width: 200px;
+}
+ .inner_page_header .inner_headin_s .searh_bar_domain {
+ width: 90%;
+}
+ .page_banner h1 {
+ letter-spacing: 0px;
+}
+ .page_banner .sub_heading_page {
+ font-size: 20px;
+ letter-spacing: 0px;
+}
+ .page_banner .offer {
+ width: 100%;
+}
+ .contact_info .contact_box {
+ padding: 15px;
+ min-height: auto;
+}
+ .contact_info .contact_box a {
+ width: 100%;
+}
+ .home_search .h_search {
+ width:60%;
+}
+ .home_search .h_submit, .home_search .h_transfer {
+ width: 20%;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+ .home_search .search_box p {
+ padding:30px 0px;
+}
+ .call_back_main .form_outer .name {
+ width: 100%;
+}
+ .price_table .plan_box .plan_header .prices {
+ font-size: 30px;
+}
+ .footer .f_outr_section {
+ padding-top: 30px;
+}
+ .footer .f_outr_section .f_txt_heading {
+ padding-top: 0px;
+ padding-bottom: 30px;
+}
+ .bundles_plans .bundle_box .bundles_arrow {
+ background: none;
+ height: auto;
+ width: 100%;
+ left: 0px;
+ top: 8px;
+ border-top: 1px solid #CCC;
+}
+ .bundles_plans .bundle_box .price_bundle {
+ padding: 20px 0;
+}
+ .bundles_plans .bundle_box a.primary_button {
+ display: inline-block;
+}
+}
+ @media (min-width : 480px) and (max-width: 767px) {
+ .slide-text {
+ top: 14%;
+}
+ .slide-text > a {
+ display: none;
+}
+}
+ @media (min-width : 200px) and (max-width: 767px) {
+ h1 {
+ font-size: 34px;
+}
+ h2 {
+ font-size: 30px;
+}
+ h3 {
+ font-size: 26px;
+}
+ h4 {
+ font-size: 22px;
+}
+ h5 {
+ font-size: 18px;
+}
+ h6 {
+ font-size: 14px;
+}
+ section {
+ padding: 30px 0px;
+}
+ .domain_promo .promo_box, .home_search .search_box, .what_we_do .whatwedo, .why_register .register_choose_section .choose_r_options, .home_services .plan_box, .customer_testimonial .testimonial, .home_blog .blog_txt_inner, .domain_plan .domain_b, .table_main .tables, .accordian_main .accordion, .safe_host .pr_info, .price_table .plan_box, .server_features .server_features_box, .support_features .support_features_inner, .contact_info .contact_box, .hosting_price .price_holder, form.contact-form, .contact_form .c_address_box, .abut-main-txt, .bundles_plans, .promo_box {
+ margin-top: 30px;
+}
+ .accordian_main .accordion, .hosting_features .features_box, .why_choose_hosting, .offer, .our_staff {
+ margin-top: 0px;
+}
+.servicess .left_box ul li .icon {
+	float: none;
+	margin: 0 auto;
+}
+.servicess .left_box ul li, .item blockquote {
+	text-align:center;
+}
+.servicess .left_box ul li h3 {
+	padding:20px 0px 0px 0px;
+	line-height:36px;
+	float:none;
+}
+.servicess .right_box ul li .content .icon {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.servicess .right_box ul li .content .title {
+	padding-left: 0;
+	display: inline-block;
+	text-align: center;
+	padding-top: 20px;
+}
+.headings h3, .headings h2, .headings h4 {
+	font-size: 30px;
+}
+ .abut-main-txt h5 {
+ margin-top:30px;
+ text-align:center;
+}
+ .abut-main-txt p {
+ text-align:center;
+}
+.safe_host .pr_info img {
+	display:none;
+}
+.safe_host .pr_info .info_right ul li i {
+	float: none;
+	margin: 0;
+}
+.safe_host .pr_info .info_right ul li {
+	text-align: center;
+}
+.safe_host .pr_info .info_right ul li h3 {
+	padding: 20px 0px;
+}
+.safe_host .pr_info .info_right a {
+	display:inherit;
+}
+.item blockquote .client-name, .item blockquote .ratting {
+	text-align: center;
+}
+.carousel-inner {
+	min-height:inherit;
+}
+.item blockquote .client-name span {
+	padding-left: 0px;
+}
+#quote-carousel .carousel-indicators {
+	display:none;
+}
+ .navbar {
+ position: absolute;
+ z-index: 9;
+ left: 0px;
+}
+ .footer .f_outr_section {
+ padding-top: 30px;
+}
+ .footer .f_outr_section .f_txt_heading {
+ padding-top: 0px;
+ padding-bottom: 30px;
+}
+ .headings_black strong, .headings_white strong {
+ font-size: 22px;
+}
+ .navbar-collapse, .navbar-collapse.in {
+ overflow-y:inherit !important;
+}
+ .headings_black span, .headings_white span {
+ font-size: 14px;
+}
+ .top_header {
+ padding: 5px 0px;
+}
+ .top_header .top_link ul {
+ text-align: center;
+}
+ .top_header .top_link ul li {
+ display: inline;
+ float: none;
+ font-size: 10px;
+ letter-spacing: 0px;
+}
+ .top_header .top_link ul li a {
+ font-size: 10px;
+}
+ .top_header .top_link.right {
+ float: none;
+}
+ .navbar {
+ min-height: 0px;
+}
+ .main_menu .logo {
+ padding: 12px 0px;
+ position: relative;
+ width:50%;
+}
+ .main_menu .logo a img {
+ z-index: 1;
+ position: relative;
+}
+ .navbar-toggle {
+ position: absolute;
+ top: -50px;
+ right: 0;
+ background-color: #FFF;
+}
+ .main_menu .navbar-nav > li > a {
+ padding: 10px;
+}
+ .navbar-nav {
+ float: left;
+ margin: 0;
+}
+ .nav > li {
+ float: left;
+ width: 100%;
+}
+ .navbar-collapse {
+ background: #666;
+}
+ .slide-text > p {
+ width: 90%;
+}
+ .slide-text > a.learn_more_s, .slide-text > a.buy_now_s {
+ display: none;
+}
+ .home_search {
+ padding:30px 0px;
+}
+ .home_search h1 {
+ font-size: 22px;
+ padding: 0px;
+}
+ .home_search .h_search {
+ width: 100%;
+}
+ .home_search .h_submit, .home_search .h_transfer {
+ width: 100%;
+ margin: 10px 0px 0px 0px;
+ }
+ .home_search .search_box .h_search, .home_search .search_box .h_submit {
+	 width:100%;
+	 border-radius:3px;
+	 font-size:20px;
+ }
+ .home_search img {
+	 display:none;
+ }
+ .home_search .search_box {
+	 padding-bottom:0px;
+ }
+ .home_search h1 {
+	text-align: center;
+ }
+ .home_search .search_box p {
+ padding: 10px;
+}
+ .why_register .register_choose_section {
+ display: inline-block;
+ margin: 0px;
+}
+ .home_services .plan_box {
+ display: inline-block;
+}
+ .customer_testimonial img {
+ display: none;
+}
+ .customer_testimonial .test_text_box {
+ position: static;
+ width: 100%;
+ padding: 15px;
+}
+ .footer .footer-bottom .nwesltr {
+ width: 100%;
+}
+ .footer .footer-bottom .join_now {
+ width: 100%;
+ margin: 10px 0px 0px 0px;
+}
+ .footer .footer-bottom .social ul {
+ float: none;
+ text-align: center;
+ margin: 20px 0px;
+}
+ .footer .copy-right {
+ font-size: 11px;
+}
+ .inner_page_header .inner_headin_s .searh_bar_domain input.search_domain {
+ width: 100%;
+}
+ .inner_page_header .inner_headin_s .searh_bar_domain .inner_search_btn {
+ width: 100%;
+ margin-top: 10px;
+}
+ .inner_page_header .inner_headin_s p {
+ width: 100%;
+}
+ .safe_host .pr_info .info_left {
+ display: inline-block;
+}
+ .accordian_main .accordion-section-title {
+ font-size: 20px;
+}
+ .page_banner {
+ text-align:center;
+}
+ .page_banner h1 {
+ font-size: 30px;
+ letter-spacing: 0px;
+ text-align:center;
+}
+ .page_banner .sub_heading_page {
+ font-size: 20px;
+ letter-spacing: 0px;
+ text-align:center;
+}
+ .page_banner ul li {
+ width: 100%;
+}
+ .page_banner .offer {
+ width: 100%;
+ margin-top:30px;
+}
+ .hosting_features .features_box .features_boxs {
+ display: inline-block;
+}
+ .hosting_features .features_box .features_boxs.right_f .features_content, .hosting_features .features_box .features_boxs .features_content {
+ float: left;
+ text-align: center;
+ width: 100%;
+ padding: 0px 20px;
+}
+ .hosting_features .features_box .features_boxs .features_imagev {
+ margin: 10px auto;
+ float: none;
+}
+ .hosting_features .features_box .features_boxs.right_f .features_imagev {
+ float: none;
+}
+ .call_back_main p {
+ display: inline-block;
+}
+ .call_back_main .form_outer .name {
+ width: 100%;
+}
+ .contact_info .contact_box {
+ padding: 15px;
+ min-height: auto;
+}
+ .contact_info .contact_box a {
+ width: 70%;
+ }
+.navbar-toggle {
+	padding: 5px 10px;
+	margin: 10px 10px 0px 0px;
+	font-size: 15px;
+	background: #fba529;
+	color: #FFF;
+	border: 0;
+	border-radius: 0;
+}
+.navbar-toggle:hover, .navbar-toggle:focus {
+	background: #fba529 !important;
+	color: #FFF;
+}
+.wm-dropdown-menu {
+	max-height: 200px;
+	overflow-y: scroll;
+	width:100%;
+}
+.main_menu .navbar-nav > li > a {
+	color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #fff;
+	background-color: transparent;
+}
+ .footer .copy-right, .footer .copy-right .flink {
+ text-align:center;
+}
+ .table_main .domain_price_box {
+ display: inline-block;
+ margin: 20px 0 0 0;
+ border: 1px solid #333;
+ border-bottom:0px;
+ width: 100%;
+}
+ .table_main .tables .middle.active {
+ background:none;
+}
+ .table_main .tables .middle, .table_main .tables .middle.active {
+ border-bottom: 1px solid #333;
+ border-top: 0px;
+ border-right: 0px;
+ border-left: 0px;
+}
+ .table_main .tables .middle .visible-xs {
+ padding-bottom: 10px;
+}
+ .footer {
+ text-align:center;
+}
+ .bundles_plans .bundle_box .plus::before {
+ left: 50%;
+ top: -34px;
+ margin-left: -10px;
+}
+ .bundles_plans .bundle_box .bundle {
+ padding: 0px 0px 30px 0px;
+}
+ .bundles_plans .bundle_box .bundles_arrow {
+ background: none;
+ height: auto;
+ width: 100%;
+ left: 0px;
+ top: -9px;
+ border-top: 1px solid #CCC;
+}
+ .bundles_plans .bundle_box .price_bundle {
+ padding: 0px 0px 10px 0;
+}
+ .bundles_plans .bundle_box a.primary_button {
+ display: inline-block;
+}
+.servicess .right_box {
+	padding: 30px 20px;
+}
+.servicess .left_box {
+	padding: 30px 0px;
+}
+.inner_page_header .inner_headin_s .tranfer_domain input.tranfer_text, .inner_page_header .inner_headin_s .tranfer_domain .tranfer_s, .inner_page_header .inner_headin_s .tranfer_domain .tranfer_domain_btn {
+	width: 100%;
+}
+.inner_page_header .inner_headin_s .tranfer_domain .tranfer_s {
+	margin:15px 0px;
+}
+.domain_sale {
+	padding: 0px 0px 30px 0px;
+}
+.hostin_features .right_box ul li .content .icon {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+.hostin_features .right_box ul li:first-child {
+	margin: 50px 0px 0px 0px;
+}
+.hostin_features .right_box ul li .content .title {
+	padding-left: 0;
+	padding-top:30px;
+	text-align: center;
+}
+.blog-padding {
+	padding: 0px 0px 30px 0px !important;
+}
+.card-body, .widgets {
+	margin-top: 30px;
+}
+.testimonial-box {
+	margin: 30px 0px 0px 0px;
+}
+.bottom-padding {
+	padding: 0px 0px 30px 0px !important;
+}
+}
+ @media (min-width : 200px) and (max-width: 479px) {
+ .slide-text > p {
+ display: none;
+}
+ .slide-text > a {
+ display: none;
+}
+}

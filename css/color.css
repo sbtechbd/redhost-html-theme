@@ -1,0 +1,691 @@
+/* 	Theme Name: RedHost
+	Author: Redcheap Theme
+	Author URI:http://www.rctheme.com
+    Version:1.0.0
+    Created: 25 October 2018
+*/
+
+body {
+	color: #333333;
+}
+.primary_button {
+	background: #150773;
+	color: #FFF;
+}
+.primary_button:hover {
+	color: #FFF;
+	background:#fba529
+}
+.secondry_button {
+	background: #1a74b1;
+	color: #FFF;
+}
+.secondry_button:hover {
+	color: #FFF;
+	background:#fba529
+}
+.white_text {
+	color: #fff;
+}
+.black_text {
+	color: #000;
+}
+.white_bg {
+	background-color: #FFF;
+}
+.light_grey_bg {
+	background-color: #EEE;
+}
+.grey_bg {
+	background-color: #666;
+}
+.dark_grey_bg {
+	background-color: #333;
+}
+.black_bg {
+	background-color: #000;
+}
+.main_menu {
+	background-color: rgba(255, 255, 255, 0.30);
+}
+.main_menu .navbar-nav > li > a {
+	color: #000;
+}
+.main_menu .navbar-nav > li.active > a {
+	background-color: transparent;
+	color: #000;
+}
+.navbar-nav li:hover > .wm-dropdown-menu li a {
+	color: #150773 !important;
+}
+.navbar-nav li:hover > .wm-dropdown-menu li a:hover {
+	color: #FFF !important;
+}
+.wm-dropdown-menu li a:hover {
+	color: #FFF !important;
+}
+.wm-dropdown-menu li a:hover {
+	background: #fba529;
+}
+.navbar-nav > li:hover {
+	background-color: transparent;
+}
+.wm-dropdown-menu {
+	background-color: #FFF;
+}
+.wm-dropdown-menu li a {
+	color: #fba529;
+}
+.fixed {
+	background: #FFF;
+}
+.control-round .carousel-control {
+	color: #ffffff;
+	background-color: transparent;
+}
+.control-round .carousel-control.left:hover, .control-round .carousel-control.right:hover {
+	color: #fdfdfd;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.indicators-line > .carousel-indicators li {
+	border: 1px solid rgb(158, 158, 158);
+	background: rgb(158, 158, 158);
+}
+.indicators-line > .carousel-indicators .active {
+	box-shadow: 0 0 0 2px #fff;
+	background-color: transparent;
+}
+.indicators-line > .carousel-indicators .active:before {
+	background-color: #fff;
+}
+.servicess .left_box ul li .icon {
+	background:#FFF;
+}
+.slide-text > h1 {
+	color: #ffffff;
+}
+.slide-text > p {
+	color: #ffffff;
+}
+.slide-text > a.buy_now_s {
+	color: #ffffff;
+	background-color: #150773;
+}
+.slide-text > a.buy_now_s:hover {
+	color: #ffffff;
+	background-color: #222222;
+}
+.domain_promo .promo_box .price_p {
+	color: #1f1f1f;
+}
+.domain_promo .promo_box .price_c {
+	color: #afaeae;
+}
+.domain_promo .promo_box.com {
+	border: 2px solid #150773;
+}
+.domain_promo .promo_box.in {
+	border: 2px solid #feb005;
+}
+.domain_promo .promo_box.org {
+	border: 2px solid #84c223;
+}
+.domain_promo .promo_box.biz {
+	border: 2px solid #1a74b1;
+}
+.domain_promo .promo_box.com .promo_h {
+	color: #150773;
+}
+.domain_promo .promo_box.in .promo_h {
+	color: #feb005;
+}
+.domain_promo .promo_box.org .promo_h {
+	color: #84c223;
+}
+.domain_promo .promo_box.biz .promo_h {
+	color: #1a74b1;
+}
+.hosting_promo .promo_box h5 {
+	color: #000;
+}
+.hosting_promo .promo_box .price_p {
+	color: #333;
+}
+.why_register {
+	background-color: #FFF;
+}
+.why_register .register_choose_section .choose_r_options i {
+	color: #150773;
+}
+.home_services .plan_box {
+	border: 1px solid #999;
+}
+.home_services .plan_box .icon i {
+	color: #23323a;
+}
+.home_services .plan_box .icon:before {
+	background-color: #FFF;
+}
+.home_services .plan_box:hover {
+	background-color: #150773;
+	border-color: #150773;
+}
+.home_services .plan_box:hover .icon:before {
+	background-color: #000;
+}
+.home_services .plan_box:hover .icon i {
+	color: #FFF;
+}
+.customer_testimonial .test_text_box {
+	background-color: #FFF;
+}
+.customer_testimonial .test_text_box span {
+	color: #150773;
+}
+.home_blog .blog_txt_inner {
+	background-color: #FFF;
+}
+.home_blog .blog_txt_inner h5 a {
+	color: #000;
+}
+.home_blog .blog_txt_inner span {
+	color: #150773;
+}
+.safe_host .pr_info .info_right ul li {
+	color: #666;
+}
+.inner_page_header:before {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	content: "";
+}
+.inner_page_header .inner_headin_s i {
+	border-bottom: 5px solid #ADADAD;
+	color: #23323a;
+	background-color: #e5e2e2;
+}
+.inner_page_header .inner_headin_s h1 {
+	color:#fff;
+}
+.inner_page_header .inner_headin_s p {
+	color: #fff;
+}
+.price_table h2 {
+	color: #313131;
+}
+.price_table p {
+	color: #585757;
+}
+.price_table .tabs_l ul.nav-tabs li.active a {
+	background-color: #150773;
+	color: #FFF;
+}
+.price_table .tabs_l ul.nav-tabs li.active a:after {
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-top: 10px solid #150773
+}
+.price_table .tabs_l ul.nav-tabs li a {
+	color: #000;
+	background-color: #DDD;
+}
+.price_table .plan_box {
+	border: 1px solid #f3f3f3;
+}
+.price_table .plan_box .plan_header {
+	background-color: #333;
+}
+.price_table .plan_box .plan_header .heading {
+	color: #FFF;
+}
+.price_table .plan_box .plan_header .prices {
+	color: #FFF;
+}
+.price_table .plan_box .plan_middle {
+	background-color: #FFF;
+}
+.price_table .plan_box .plan_middle li {
+	border-bottom: 1px solid #f7f7f7;
+	color: #333;
+}
+.price_table .plan_box .plan_footer {
+	background-color: #150773;
+}
+.price_table .plan_box .plan_footer .select_p {
+	border: 1px solid #c7c7c7;
+	background-color: #fff;
+}
+.hosting_features .features_box .features_boxs {
+	background-color: #fff;
+	border-bottom: 3px solid #E5E2E2;
+}
+.hosting_features .features_box .features_boxs .features_imagev {
+	background-color: #150773;
+}
+.hosting_features .features_box .features_boxs .features_imagev i {
+	color: #fff;
+}
+.hosting_features .features_box .features_boxs .features_content p {
+	color: #707070;
+}
+.hosting_features .features_box .features_boxs:hover {
+	background-color: #150773;
+	border-bottom: 3px solid #150773;
+}
+.hosting_features .features_box .features_boxs:hover h5, .hosting_features .features_box .features_boxs:hover p {
+	color: #fff;
+}
+.hosting_features .features_box .features_boxs:hover .features_imagev i {
+	color: #23323A;
+}
+.hosting_features .features_box .features_boxs:hover .features_imagev {
+	background-color: #fff;
+}
+.why_choose_hosting .hosting_box i {
+	color: #999;
+	background-color: #DDD;
+}
+.why_choose_hosting .hosting_box:hover i {
+	background-color: #150773;
+	color: #fff;
+}
+.why_choose_hosting .hosting_box:hover {
+	box-shadow:0px 0px 10px #CCC;
+}
+.page_banner:before {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	content: "";
+}
+.page_banner h1 {
+	color: #fff;
+}
+.page_banner .sub_heading_page {
+	color: #fff;
+}
+.page_banner .sub_heading_page strong {
+	color: #fba529;
+}
+.page_banner ul li {
+	color: #fff;
+}
+.page_banner .startsat {
+	color: #fff;
+}
+.page_banner .banner_price {
+	color: #1a74b1;
+}
+.page_banner .banner_price span {
+	color: #FFF;
+}
+.page_banner .offer {
+	background-color: #FFF;
+}
+.page_banner .offer .offer_inner {
+	border: 2px dashed #333;
+}
+.page_banner .offer .offer_inner .top_l {
+	color: #000;
+}
+.page_banner .offer .offer_inner .big_l {
+	color: #150773;
+}
+.page_banner .offer .offer_inner .off {
+	color: #333;
+}
+.page_banner .offer .offer_inner .c_code {
+	color: #333;
+}
+.page_banner .offer .offer_inner .c_code span {
+	color:#150773;
+}
+.page_banner .offer .offer_inner .ends {
+	color: #666;
+}
+.table_main h2 {
+	color: #313131;
+}
+.table_main .tables {
+	background-color: #FFF;
+	box-shadow: 0px 0px 5px #666;
+}
+.table_main .tables .heading {
+	background-color: #150773;
+	color: #FFF;
+}
+.table_main .tables .heading.active {
+	background-color: #666;
+}
+.table_main .tables .middle.active {
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #EEE;
+	border-top: 1px solid #EEE;
+}
+.table_main .tables .middle, .table_main .tables .middle.active {
+	border-right: 1px solid #EEE;
+}
+.table_main .tables .middle.active.domain, .table_main .tables .middle.domain {
+	background-color: #333333;
+	color: #FFF;
+}
+.table_main .tables table tr td {
+	color: #333333;
+	border-bottom: 1px solid #eaeaea;
+	border-right: 1px solid #eaeaea;
+}
+.table_main .tables table tr td i {
+	color: #150773;
+}
+.accordian_main .accordion-section-title {
+	background-color: #FFF;
+	color: #333;
+	border-left: 10px solid #150773;
+}
+.accordian_main .accordion-section-title.active, .accordion-section-title:hover {
+	background-color: #150773;
+	color: #FFF;
+}
+.accordian_main .accordion-section-content {
+	border: 2px solid #150773;
+	background-color: #FFF;
+}
+.server_features .server_features_box {
+	background-color: #FFF;
+	box-shadow: 0px 0px 5px #CCC;
+}
+.server_features .server_features_box i {
+	color: #222222;
+}
+.login_box {
+	background-color: #f6f6f6;
+}
+.login_form {
+	color: #666;
+}
+.login_form .login_header {
+	background-color: #150773;
+	color: #FFF;
+}
+.login_form fieldset {
+	background-color: #FFF;
+}
+.login_form fieldset + fieldset {
+	border-top: 1px solid #CCC;
+}
+.login_form .login_footer {
+	border-top: 1px solid #CCC;
+	background-color: #EEE;
+}
+.login_form a {
+	color: #150773;
+}
+.login_form .label {
+	color: #666;
+}
+.login_form .input input, .login_form .select select, .login_form .textarea textarea {
+	background-color: #fff;
+	color: #404040;
+}
+.login_form .checkbox {
+	color: #666;
+}
+.login_form .checkbox i {
+	background-color: #fff;
+}
+.login_form .button {
+	color: #fff;
+	background-color: #150773;
+}
+.login_form .button:hover {
+	background-color: #000;
+}
+.login_form .input input, .login_form .select select, .login_form .textarea textarea, .login_form .radio i, .login_form .checkbox i, .login_form .toggle i, .login_form .icon-append, .login_form .icon-prepend {
+	border-color: #e5e5e5;
+}
+.login_form .icon-append, .login_form .icon-prepend {
+	color: #ccc;
+}
+.login_form .input:hover input, .login_form .select:hover select, .login_form .textarea:hover textarea, .login_form .radio:hover i, .login_form .checkbox:hover i, .login_form .toggle:hover i {
+	border-color: #150773;
+}
+ .login_form .rating input + label:hover, .login_form .rating input + label:hover ~ label {
+ color: #150773;
+}
+.login_form .input input:focus, .login_form .select select:focus, .login_form .textarea textarea:focus, .login_form .radio input:focus + i, .login_form .checkbox input:focus + i, .login_form .toggle input:focus + i {
+	border-color: #150773;
+}
+.login_form .checkbox input + i:after {
+	color: #150773;
+}
+.login_form .radio input:checked + i, .login_form .checkbox input:checked + i, .login_form .toggle input:checked + i {
+	border-color: #150773;
+}
+ .login_form .rating input:checked ~ label {
+ color: #150773;
+}
+.offer .offer_box {
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.offer .offer_box .offer_info .cupoun {
+	border: 1px dashed #666;
+}
+.support_features .sub_heading {
+	color: #666;
+}
+.support_features .support_features_inner ul li {
+	color: #333;
+}
+.support_features .support_features_inner ul li:before {
+	color: #150773;
+}
+.contact_info .contact_box {
+	background-color: #fff;
+	box-shadow: 0px 0px 5px #666;
+}
+.contact_info .contact_box i {
+	background-color: #000;
+	color: #fff;
+}
+.contact_form span.ctext {
+	border-bottom: 1px solid #d3d7da;
+}
+.contact_form span.ctext:before {
+	background-color: #d3d7da;
+}
+.contact_form .c_address_box {
+	background-color: #f6f6f6;
+	border: 1px solid #DDD;
+}
+.contact_form .c_address_box i.address-icon {
+	background-color: #000;
+	color: #fff;
+}
+.contact_form .c_address_box .contact_social ul li a {
+	background-color: #150773;
+	color: #FFF;
+}
+.contact_form .c_address_box .contact_social ul li a:hover {
+	background-color: #333;
+}
+.what_we_do {
+	background: #150773;
+	background-image:url(../images/testimonial-bg.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+	position:relative;
+}
+.what_we_do:before {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .8);
+	content: "";
+}
+.domain_plan .domain_b .domain_h {
+	background-color: #FFF;
+	border-left: 2px solid #eeeeee;
+	border-right: 2px solid #eeeeee;
+}
+.domain_plan .domain_b .domain_h p {
+	color: #000;
+}
+.domain_plan .domain_b .bottom_b {
+	box-shadow: 0px 0px 7px #CCC inset;
+}
+.domain_plan .domain_b .bottom_b .plan_p {
+	color: #000;
+}
+.domain_plan .domain_b .bottom_b .cut_p {
+	color: #b5b1b1;
+}
+.domain_plan .domain_b.com {
+	border-top: 5px solid #0061a3;
+}
+.domain_plan .domain_b.in {
+	border-top: 5px solid #cd0531;
+}
+.domain_plan .domain_b.live {
+	border-top: 5px solid #fc9a0f;
+}
+.domain_plan .domain_b.online {
+	border-top: 5px solid #0aa442;
+}
+.domain_plan .domain_b:hover {
+	border-top: 5px solid #000;
+}
+.domain_plan .domain_b:hover .domain_h {
+	color: #e82503;
+}
+.domain_plan .domain_b:hover .domain_h p {
+	color: #e82503;
+}
+.hosting_price .price_holder {
+	background-color: #FFF;
+	box-shadow: 0px 0px 5px #EEE;
+}
+.hosting_price .price_holder:hover {
+	background-color: #fba529;
+}
+.hosting_price .price_holder h4 {
+	color: #4d4d4d;
+}
+.hosting_price .price_holder .plan_value {
+	color: #fba529;
+}
+.hosting_price .price_holder ul li {
+	color: #333;
+}
+.hosting_price .price_holder:hover h4, .hosting_price .price_holder:hover ul li, .hosting_price .price_holder:hover .plan_value {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+ animation-duration: .6s;
+	animation-timing-function: linear;
+	color:#FFF;
+}
+.hosting_price .price_holder a:hover {
+	background:#FFFF;
+	color:#fba529;
+}
+.not_found h2 {
+	border-bottom: 1px solid #666;
+}
+.not_found h3 {
+	color: #150773
+}
+.footer {
+	background: #111a2b;
+}
+.footer .f_about p {
+	color: #666;
+}
+.footer .f_outr_section .f_txt_heading h4 {
+	color: #1a74b1;
+}
+.footer .f_outr_section .f_txt_heading ul li a:hover {
+	color: #1a74b1;
+}
+.footer .copy-right {
+	color: #666;
+}
+.footer .copy-right .flink a {
+	color: #b0b0b0;
+}
+.bundles_plans {
+	box-shadow: 0px 0px 6px #999;
+}
+.bundles_plans .bundles_heading {
+	background: #150773;
+}
+.domain_sale .promo_box {
+	box-shadow: 0px 0px 10px #ECECEC;
+	margin:40px 0px 0px 0px;
+	overflow:hidden;
+}
+.domain_sale .promo_box:hover {
+	background-color: #fba529;
+}
+.domain_sale .promo_box .box_top {
+	color: #000;
+}
+.domain_sale .promo_box .domain_p_name {
+	color: #373737;
+}
+.domain_sale .promo_box .promo_date {
+	color: #373737;
+}
+.domain_sale .promo_box .buynow a {
+	display: inherit;
+	margin-top: 10px;
+}
+.domain_sale .promo_box:hover .box_top, .domain_sale .promo_box:hover .promo_date, .domain_sale .promo_box:hover .domain_p_name {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+    animation-duration: .6s;
+	animation-timing-function: linear;
+	color:#FFF;
+}
+.servicess .left_box ul li .icon:after {
+	background-color: #1a74b1;
+}
+.servicess .right_box:before {
+	background-color: #1a74b1;
+}
+.testimonial-box {
+	border: 1px solid #1a74b1;
+	background-color: #FFF;
+}
+.testimonial-box:hover {
+	background-color: #1a74b1;
+}
+.hostin_features {
+	background-color: #1a74b1;
+}
+.home_offer ul li a:hover {
+	background:#150773;
+	border-color:#150773;
+}
+.home_offer ul li:last-child a {
+	background:#150773;
+	border-color:#150773;
+}
